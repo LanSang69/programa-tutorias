@@ -10,11 +10,21 @@
   
 nav{
     min-height: 10vh;
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1000;
     background-color: var(--color-5);
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-bar{
+    top: 10vh;
 }
 
 .nav-link{
@@ -24,4 +34,26 @@ nav{
     color: var(--color-1);
     padding: 10px;
     margin-right: 15px;
+}
+
+
+.navbar-toggler {
+    border: 2px solid var(--color-3); /* Add your custom border color and style */
+    border-radius: 5px; /* Optional: Add border radius */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default icon */
+}
+
+.navbar-toggler-icon::before {
+    content: '\2630'; /* Unicode for hamburger icon */
+    font-family: var(--nav-font);
+    font-size: 1rem;
+    color: var(--color-1); /* Change to your desired icon color */
+}
+
+.navbar-toggler-text {
+    font-size: 1rem;
+    color: var(--color-1); /* Change to your desired text color */
 }

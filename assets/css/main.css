@@ -1,0 +1,9 @@
+/* Carousel */
+.carousel-inner {
+    height: 40vh;
+}
+
+.carousel-inner img {
+    height: 40vh;
+    object-fit: cover;
+}
