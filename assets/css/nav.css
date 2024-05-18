@@ -1,0 +1,27 @@
+:root {
+    --color-1: #d1dbe4; /* Light Blue Grey */
+    --color-2: #a3b7ca; /* Silver Lake Blue */
+    --color-3: #7593af; /* Dark Sky Blue */
+    --color-4: #476f95; /* Steel Blue */
+    --color-5: #194a7a; /* Dark Cerulean */
+    --bondi-blue: #1E91B3ff;
+    --nav-font: "Courier Prime", monospace;
+  }
+  
+nav{
+    min-height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-5);
+}
+
+.nav-link{
+    cursor: pointer;
+    font-family: var(--nav-font);
+    font-size: 1.1em;
+    color: var(--color-1);
+    padding: 10px;
+    margin-right: 15px;
+}
