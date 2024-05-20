@@ -1,0 +1,10 @@
+.n-invalid, .ln-invalid, .sln-invalid, .email-invalid, .boleta-invalid, .tel-invalid, .password-invalid{
+    color: red;
+}
+
+.show{
+    display:block;
+}
+.hide{
+    display:none;
+}

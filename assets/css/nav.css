@@ -9,7 +9,7 @@
   }
   
 nav{
-    min-height: 10vh;
+    min-height: 7vh;
     width: 100%;
     z-index: 1000;
     background-color: var(--color-5);
@@ -36,24 +36,26 @@ nav{
     margin-right: 15px;
 }
 
-
 .navbar-toggler {
-    border: 2px solid var(--color-3); /* Add your custom border color and style */
-    border-radius: 5px; /* Optional: Add border radius */
-}
-
-.navbar-toggler-icon {
-    background-image: none; /* Remove default icon */
-}
-
-.navbar-toggler-icon::before {
-    content: '\2630'; /* Unicode for hamburger icon */
-    font-family: var(--nav-font);
-    font-size: 1rem;
-    color: var(--color-1); /* Change to your desired icon color */
+    border: 1px solid var(--color-3);
+    border-radius: 5px; 
 }
 
 .navbar-toggler-text {
     font-size: 1rem;
-    color: var(--color-1); /* Change to your desired text color */
+    color: var(--color-1); 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+      outline: none;
+      box-shadow: none;
+  }  
+
+@media only screen and (max-width: 575px){
+.nav-link{font-size: 0.8em;}
 }

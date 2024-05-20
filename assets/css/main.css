@@ -1,9 +1,84 @@
-/* Carousel */
+:root {
+    --color-1: #d1dbe4; /* Light Blue Grey */
+    --color-2: #a3b7ca; /* Silver Lake Blue */
+    --color-3: #7593af; /* Dark Sky Blue */
+    --color-4: #476f95; /* Steel Blue */
+    --color-5: #194a7a; /* Dark Cerulean */
+    --bondi-blue: #1E91B3ff;
+    --nav-font: "Courier Prime", monospace;
+  }
+
+/* Carrusel de imagenes */
 .carousel-inner {
-    height: 40vh;
+    height: 45vh;
+    background-color: var(--bondi-blue);
 }
 
 .carousel-inner img {
-    height: 40vh;
+    height: 45vh;
     object-fit: cover;
+    opacity: 0.8;
+}
+
+.carousel-indicators .active{
+    background-color: var(--color-5);
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 10vh ;
+  background-size: 100%, 100%;
+  background-image: none;
+  line-height: 1; 
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  opacity: 0.5;
+  font-size: 55px;
+  color: var(--color-5);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  opacity: 0.5;
+  font-size: 55px;
+  color: var(--color-5);
+}
+
+@media only screen and (max-width: 780px) and (min-width: 460px) {
+    .carousel-inner {
+        height: 35vh;
+    }
+    
+    .carousel-inner img {
+        height: 35vh;
+    }
+    .carousel-control-next-icon:after, 
+    .carousel-control-prev-icon:after
+    {
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 465px){
+    .carousel-inner {
+        height: 25vh;
+    }
+    
+    .carousel-inner img {
+        height: 25vh;
+    }
+    .carousel-control-next-icon:after, 
+    .carousel-control-prev-icon:after
+    {
+        font-size: 25px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 5vh ;
+    }
 }

@@ -24,3 +24,23 @@ header img{
     margin-right: 20px;
     margin-left: 20px;
 }
+
+@media only screen and (max-width: 780px) and (min-width: 450px){
+    header  h1{
+        font-size: 1.3em;
+    }
+
+    header img{
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 449px){
+    header  h1{
+        font-size: 1em;
+    }
+
+    header img{
+        width: 50px;
+    }
+}
