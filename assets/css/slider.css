@@ -10,14 +10,14 @@
 
 /* Carrusel de imagenes */
 .carousel-inner {
-    height: 45vh;
+    height: 50vh;
     background-color: var(--bondi-blue);
 }
 
 .carousel-inner img {
-    height: 45vh;
+    height: 50vh;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .carousel-indicators .active{

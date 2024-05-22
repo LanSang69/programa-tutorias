@@ -12,7 +12,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/content.css">
 </head>
 
 <body>
@@ -34,14 +35,14 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul class="navbar-nav nav-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Inicio</b></a>
+                            <li class="nav-item nav-item-active">
+                                <a class="nav-link" href="index.html"><b>Inicio</b></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><b>Registro</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Admin</b></a>
+                                <a class="nav-link" href="pantallas/form_admin.html"><b>Admin</b></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><b>Generar pdf</b></a>
@@ -49,61 +50,372 @@
                         </ul>
                     </div>
                 </div>
-        </div>
-        </nav>
-        <div id="main"></div>
-            <!-- Carrusel -->
-            <section id="slider">
-                <div id="info-tutorias" class="carousel slide" data-bs-ride="carousel">
+    </nav>
 
-                    <!-- Indicadores -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="0"
-                            class="active"></button>
-                        <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="3"></button>
-                    </div>
+    <main>
+                    <!-- Carrusel -->
+                    <section id="slider">
+                        <div id="info-tutorias" class="carousel slide" data-bs-ride="carousel">
 
-                    <!-- El carrusel -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/images/tutorias_slider/estrategias.png" alt="Estrategias del PIT" class="d-block w-100">
+                            <!-- Indicadores -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#info-tutorias" data-bs-slide-to="3"></button>
+                            </div>
+
+                            <!-- El carrusel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/tutorias_slider/estrategias.svg" alt="Estrategias del PIT"
+                                        class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/tutorias_slider/figuras.svg"
+                                        alt="Figuras participantes en el PIT" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/tutorias_slider/p-accion.svg" alt="Plan de acción del PIT"
+                                        class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/tutorias_slider/intervencion.svg"
+                                        alt="Momentos d eintervención" class="d-block w-100">
+                                </div>
+                            </div>
+                            <!-- Controles izquierdos y derechos -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#info-tutorias"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#info-tutorias"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/tutorias_slider/figuras.png" alt="Figuras participantes en el PIT" class="d-block w-100">
+                    </section>
+
+                    <section class="container" id="informacion">
+                        <div id="objetivos" class="pt-3">
+                            <h2>Objetivos</h2>
+                            <hr>
+                            <p>El <strong>Programa Institucional de Tutorías (PIT)</strong> tiene como finalidad mejorar
+                                la calidad
+                                educativa a través del acompañamiento personalizado de los estudiantes. Este programa
+                                busca
+                                desarrollar estrategias que permitan a los alumnos mejorar su desempeño académico,
+                                promover su
+                                formación integral y facilitar su adaptación al entorno educativo del IPN.</p>
                         </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/tutorias_slider/p-accion.png" alt="Plan de acción del PIT" class="d-block w-100">
+
+                        <div class="row">
+                            <div id="objetivo-general" class="col-md-4">
+                                <h2>Objetivo General</h2>
+                                <hr>
+                                <p>El objetivo general del PIT es <strong>apoyar a los estudiantes en su trayectoria
+                                        académica,
+                                        facilitando su desarrollo integral y promoviendo un ambiente educativo de
+                                        calidad</strong>
+                                    mediante la implementación de tutorías sistemáticas y personalizadas en todas las
+                                    Unidades
+                                    Académicas del IPN.</p>
+                            </div>
+
+                            <div id="objetivos-especificos" class="col-md-8">
+                                <h2>Objetivos Específicos</h2>
+                                <hr>
+                                <ul>
+                                    <li><strong>Fomentar el sentido de pertenencia institucional</strong> mediante la
+                                        difusión de
+                                        eventos académicos, culturales y deportivos.</li>
+                                    <li><strong>Acompañar y retroalimentar la trayectoria escolar</strong> de los
+                                        alumnos,
+                                        verificando
+                                        periódicamente sus avances y resultados académicos.</li>
+                                    <li><strong>Orientar sobre servicios y trámites</strong> disponibles en el IPN para
+                                        facilitar la
+                                        vida estudiantil.</li>
+                                    <li><strong>Detectar y canalizar problemáticas</strong> de orden académico,
+                                        emocional o de salud
+                                        que
+                                        afecten a los estudiantes.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/tutorias_slider/intervencion.png" alt="Momentos d eintervención" class="d-block w-100">
+
+                        <div class="" id="modalidad">
+                            <h2>Modalidades educativas para la intervención tutoral</h2>
+                            <hr class="hr-white">
+                            <div class="modalidades">
+                                <ol class="">
+                                    <li>Escolarizada</li>
+                                    <li>No escolarizada</li>
+                                    <li>Mixta</li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Controles izquierdos y derechos -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#info-tutorias"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#info-tutorias"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </section>
-            <section class="" id="informacion">
-                <div id="objetivoG"></div>
-                <div id="objetivoE"></div>
-                <div id="modalidad"></div>
-                <div id="intervencion"></div>
-                <div id="modelosAtencion"></div>
-                <div id="areasIntervencion"></div>
-            </section>
+                    </section>
+
+                    <section class="container" id="definiciones">
+                        <div class="pt-4" id="referente-educativo">
+                            <div class="card p-3 bg-light">
+
+                                <div class="title_r">
+                                    <h2>Referente Educativo</h2>
+                                    <hr class="hr-white">
+                                </div>
+                                <div class="referente_content pt-1">
+                                    <div id="definicion-de-tutoria">
+                                        <div class="card-header">
+                                            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                                <h2>Definición de Tutoría</h2>
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" data-bs-parent="#referente-educativo">
+                                            <div class="card-body">
+                                                <p>
+                                                    De acuerdo con la ANUIES (2012), la tutoría para los estudiantes del
+                                                    nivel
+                                                    superior pretende significar un <strong>acompañamiento
+                                                        personalizado</strong>, es
+                                                    decir, esta acción refiere la atención que un profesor capacitado
+                                                    como tutor realiza
+                                                    sobre el estudiante, con el propósito de que éste alcance su pleno
+                                                    desarrollo, en
+                                                    cuanto a su crecimiento y madurez, y a la manifestación de actitudes
+                                                    de responsabilidad
+                                                    y de libertad.
+                                                </p>
+                                                <p>
+                                                    Así mismo, Moncada y Gómez (2013), consideran que, en los niveles
+                                                    educativos medio
+                                                    superior y superior, la tutoría ejerce un papel fundamental al
+                                                    propiciar un
+                                                    aprendizaje autónomo que haga posible que el alumno, de manera
+                                                    independiente,
+                                                    llegue a construir el conocimiento e interpretar funcionalmente el
+                                                    contexto que habita.
+                                                </p>
+                                                <p>
+                                                    Identificando además que los propósitos centrales de la tutoría para
+                                                    un
+                                                    acompañamiento eficaz y útil son: motivar la reflexión, el diálogo,
+                                                    la autonomía y la
+                                                    crítica, así como el desarrollo de estrategias para el aprendizaje,
+                                                    la participación en
+                                                    órganos estudiantiles y explorar los recursos formativos
+                                                    curriculares y
+                                                    extracurriculares. El tutor además necesita conducir con espíritu
+                                                    crítico y profesional
+                                                    el uso de nuevas tecnologías para manejar de manera eficiente y
+                                                    expedita las diversas
+                                                    tareas que debe realizar el alumno. En su carácter de orientador,
+                                                    animado por la
+                                                    obtención de logros, el tutor debe asesorar sobre los métodos
+                                                    particulares de trabajo y
+                                                    personalizar, conforme a las particularidades del alumno, su sistema
+                                                    de estudio.
+                                                </p>
+                                                <p>
+                                                    También deberá de ser capaz de identificar tempranamente las
+                                                    situaciones de carencia o
+                                                    conflicto que vive el alumno para tratar de abordar estas
+                                                    condiciones, subsanar las que
+                                                    sean factibles y permitir que el desempeño del alumno sea el
+                                                    esperado por él y por la
+                                                    institución, con el propósito de evitar el fracaso, la deserción o
+                                                    el abandono escolar.
+                                                    De igual modo, el tutor tiene la tarea de plantear estrategias
+                                                    didácticas que permitan
+                                                    al alumno aprender a hacer de forma colaborativa.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="tutoria-contexto-global">
+                                        <div class="card-header">
+                                            <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                                <h2>La Tutoría en el Contexto Global</h2>
+                                            </a>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-bs-parent="#referente-educativo">
+                                            <div class="card-body">
+                                                <p>
+                                                    A nivel global, la tutoría es esencial en la educación superior para
+                                                    facilitar la
+                                                    adaptación de los estudiantes a su entorno, impulsar su desarrollo
+                                                    integral y garantizar
+                                                    el uso adecuado de los recursos educativos. Se considera un factor
+                                                    de calidad que
+                                                    contribuye significativamente al proceso de aprendizaje y formación
+                                                    continua.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="antecedentes-tutorias-ipn">
+                                        <div class="card-header">
+                                            <a class="btn" data-bs-toggle="collapse" href="#collapseThree">
+                                                <h2>Antecedentes de las Tutorías en el IPN</h2>
+                                            </a>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-bs-parent="#referente-educativo">
+                                            <div class="card-body">
+                                                <p>En <strong>2002</strong>, el Instituto Politécnico Nacional (IPN)
+                                                    <strong>implementó el Programa Institucional de Tutorías
+                                                        (PIT) en todas sus Unidades Académicas</strong>, coordinado por
+                                                    la Secretaría
+                                                    Académica. Este programa tenía como objetivo asignar tutores a los
+                                                    estudiantes becados para mejorar su desempeño y asegurar la
+                                                    finalización oportuna de sus estudios.
+                                                </p>
+
+                                                <p>En <strong>2003, se amplió el PIT</strong> para hacer un seguimiento
+                                                    continuo de los
+                                                    estudiantes desde su ingreso hasta su egreso, con el fin de mejorar
+                                                    los indicadores de permanencia, aprovechamiento y titulación en un
+                                                    contexto educativo más flexible y con diversas estrategias de
+                                                    aprendizaje.</p>
+
+                                                <p>En <strong>2004, se formalizó el PIT con la creación del Comité de
+                                                        Evaluación
+                                                        y Seguimiento del PIT (CEySPIT)</strong> y, posteriormente, se
+                                                    establecieron
+                                                    comités similares en cada Unidad Académica. A pesar de los logros
+                                                    evidentes del programa, se reconoció la necesidad de redirigir los
+                                                    esfuerzos hacia metas y estrategias institucionales que aseguren
+                                                    acciones sistematizadas de planeación, operación, seguimiento y
+                                                    evaluación, de acuerdo con las necesidades actuales del proceso
+                                                    educativo.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="container" id="tipo-tutorias">
+                        <div class="pt-5">
+                            <h2>Tipos de Tutorías</h2>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 pt-2">
+                                <div class="card h-100 p-2 bg-light">
+                                    <div class="card-header">
+                                        <h2>Tutoría Individual</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>La tutoría individual es un <strong>acompañamiento académico y
+                                                personal</strong>
+                                            que se
+                                            realiza a lo largo del periodo escolar a petición de un alumno, quien
+                                            identifica al tutor
+                                            que puede apoyarlo en los temas de su interés. Este tipo de tutoría
+                                            brinda
+                                            orientación
+                                            sobre programas académicos, trámites y servicios disponibles en el IPN,
+                                            y
+                                            canaliza a las
+                                            dependencias politécnicas cuando sea necesario. La tutoría individual se
+                                            caracteriza por la
+                                            creación de un ambiente de respeto, confianza y escucha empática.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pt-2">
+                                <div class="card h-100 p-2 bg-light">
+                                    <div class="card-header">
+                                        <h2>Tutoría Grupal</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>La tutoría grupal es una actividad de <strong> acompañamiento durante todo el
+                                                periodo
+                                                escolar </strong> para
+                                            un grupo validado y autorizado dentro de la estructura académica. El
+                                            docente
+                                            apoya en el
+                                            <strong>fortalecimiento del sentido de pertenencia institucional</strong>,
+                                            difunde los
+                                            derechos y
+                                            obligaciones, y conoce los programas y servicios de apoyo disponibles en
+                                            el
+                                            IPN. Esta
+                                            modalidad también incluye la canalización a servicios específicos cuando
+                                            es
+                                            necesario.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pt-3">
+                                <div class="card h-100 p-2 bg-light">
+                                    <div class="card-header">
+                                        <h2>Tutoría de Recuperación Académica</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Es la acción <strong>dirigida a grupos de alumnos con dictamen</strong> 
+                                            de la Comisión de
+                                            Situación Escolar (COSIE), en riesgo de rezago, abandono o que han recursado
+                                            una Unidad de Aprendizaje y no la acreditaron; así como de unidades de
+                                            aprendizaje de programas en liquidación. Esta acción tiene la finalidad de
+                                          <strong>  regularizar la
+                                            trayectoria escolar de los alumnos</strong>. La tutoría debe contar con la aprobación
+                                            de la
+                                            Academia, el visto bueno del titular de la Unidad Académica y estar
+                                            autorizada por la
+                                            Dirección de Coordinación correspondiente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pt-3">
+                                <div class="card h-100 p-2 bg-light">
+                                    <div class="card-header">
+                                        <h2>Tutoría de Regularización</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Es la acción dirigida a un grupo de <strong>alumnos que requieren reafirmar
+                                            conocimientos</strong>,
+                                            que no hayan acreditado su unidad de aprendizaje, por temas
+                                            específicos de difícil comprensión o para mejorar el rendimiento académico
+                                            en una Unidad
+                                            de Aprendizaje.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pt-3">
+                                <div class="card h-100 p-2 bg-light">
+                                    <div class="card-header">
+                                        <h2>Tutoría entre pares</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Esta actividad <strong>es desempeñada por alumnos de los Niveles Medio Superior o
+                                            Superior con buen dominio en determinadas unidades de aprendizaje</strong>, las
+                                            cuales,
+                                            frecuentemente tienen alto índice de reprobación. La tutoría entre pares se
+                                            realiza
+                                            en un espacio y horario asignado, y la labor del alumno tutor es explicar
+                                            los temas
+                                            que no han sido comprendidos parcial o totalmente, apoyar con ejemplos y
+                                            resolución de problemas o ejercicios, en un ambiente de respeto y confianza,
+                                            compartiendo estrategias de enseñanza que los jóvenes tutores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
     </main>
 
-        <footer>
-        </footer>
-        <script src="assets/js/navbar.js"></script>
+    <footer>
+    </footer>
+    <script src="assets/js/navbar.js"></script>
 </body>
 
 </html>

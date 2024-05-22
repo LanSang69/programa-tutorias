@@ -1,0 +1,88 @@
+:root {
+    --color-1: #d1dbe4; /* Light Blue Grey */
+    --color-2: #a3b7ca; /* Silver Lake Blue */
+    --color-3: #7593af; /* Dark Sky Blue */
+    --color-4: #476f95; /* Steel Blue */
+    --color-5: #194a7a; /* Dark Cerulean */
+    --bondi-blue: #1E91B3ff;
+    --nav-font: "Courier Prime", monospace;
+  }
+
+br{
+    background-color: black;
+}
+
+h2 + hr{
+    background-color: var(--color-5);
+    opacity: 1;
+    width: 50px;
+    height:5px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+div > h2{
+    color: var(--color-5);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p, li{
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+strong{
+    color: var(--color-5);
+}
+
+#objetivo-general, #objetivos-especificos{
+    padding: 30px;
+}
+
+#modalidad{
+    padding: 20px;
+    background-color: var(--color-5);
+}
+
+.hr-white{
+    background-color: var(--color-1);
+}
+
+#modalidad h2, #modalidad li{
+    color: var(--color-1);
+}
+
+
+.modalidades{
+    padding: 20px;
+}
+
+.modalidades{
+    padding: 20px;
+}
+
+.modalidades li{
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.title_r{
+    padding: 20px;
+}
+
+.referente_content{
+    padding: 30px;
+}
+
+.referente_content > div > h2 {
+    font-size: 1.3rem;
+}
+
+.card-header h2{
+    text-align: left;
+    color: var(--color-5);
+    font-size: 1.3em;
+    font-weight: bold;
+}

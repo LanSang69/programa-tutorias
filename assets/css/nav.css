@@ -36,6 +36,15 @@ nav{
     margin-right: 15px;
 }
 
+.nav-item:hover,
+.nav-item-active
+{
+    .nav-link{
+        background-color: var(--color-1);
+        color: var(--color-5)
+    }
+}
+
 .navbar-toggler {
     border: 1px solid var(--color-3);
     border-radius: 5px; 

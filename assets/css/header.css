@@ -5,7 +5,6 @@
     --color-4: #476f95; /* Steel Blue */
     --color-5: #194a7a; /* Dark Cerulean */
     --bondi-blue: #1E91B3ff;
-    --nav-font: "Courier Prime", monospace;
   }
 
 header{
@@ -13,7 +12,6 @@ header{
 }
 
 header  h1{
-    font-family: var(--nav-font);
     font-size: 2em;
     color: var(--color-5);
     padding: 10px;  
