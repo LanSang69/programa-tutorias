@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
       if (window.scrollY >= navbarOffsetTop) {
         navbar.classList.add('fixed-nav');
-        // main.style.paddingTop = navbarHeight + 'px';
+        console.log(navbarHeight);
+        main.style.paddingTop = '66px';
       } else {
         navbar.classList.remove('fixed-nav');
-        // main.style.paddingTop = '0px';
+        main.style.paddingTop = '0px';
       }
     });
   });

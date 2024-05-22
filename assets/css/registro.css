@@ -1,17 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-}
+:root {
+    --color-1: #d1dbe4; /* Light Blue Grey */
+    --color-2: #a3b7ca; /* Silver Lake Blue */
+    --color-3: #7593af; /* Dark Sky Blue */
+    --color-4: #476f95; /* Steel Blue */
+    --color-5: #194a7a; /* Dark Cerulean */
+    --bondi-blue: #1E91B3ff;
+    --nav-font: "Courier Prime", monospace;
+  }
 
 body{
-    height: 100vh;
-    background-color: beige;
+    height: 83vh;
+    /* background-color:var(--color-1) */
 }
 
 main{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
     width: 100%;
     padding: 20px;
     margin: auto;
@@ -30,7 +35,7 @@ main{
     display: flex;
     justify-content: center;
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 128, 255, 0.4);
+    background-color: var(--color-5);
 
 }
 
@@ -65,7 +70,7 @@ main{
 
 .caja__trasera button:hover{
     background: #fff;
-    color: #46A2FD;
+    color:var(--color-5);
 }
 
 /*Formularios*/
@@ -89,13 +94,14 @@ main{
     background: white;
     position: absolute;
     border-radius: 20px;
+    border: 3px solid var(--color-5);
 }
 
 .contenedor__registro form h2{
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
-    color: #46A2FD;
+    color: var(--color-5)
 }
 
 .contenedor__registro form input[type="text"],
@@ -116,7 +122,7 @@ main{
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #46A2FD;
+    background: var(--color-5);
     font-weight: 600;
     cursor: pointer;
     color: white;
@@ -143,6 +149,25 @@ main{
     display: none;
 }
 
+input + div {
+    max-height: 4px;
+}
+
+.n-invalid, .ln-invalid, .sln-invalid, .email-invalid, .boleta-invalid, .tel-invalid, .password-invalid{
+    color: red;
+    font-size: 0.7em;
+}
+
+.show{
+    display:block;
+}
+.hide{
+    display:none;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
 
 @media screen and (max-width: 920px){
 

@@ -18,7 +18,9 @@
                 <?php
                     session_start();
                     if (!isset($_SESSION['id'])) {
-                        echo '<div class="alert alert-danger"><p></p></div>';
+                        echo '<div class="alert alert-danger"><p>No tienes permiso de estar en esta página</p></div>';
+                        header("refresh:1; url=../index.html");
+                        exit;
                     } else {
                         echo '<div class="mb-4"><h1>Bienvenido Admin</h1></div>';
                         echo "<div class=\"alert alert-info\"><p>Correo: {$_SESSION['email']}</p></div>";
@@ -37,6 +39,9 @@
                       </script>";
                     }
                 ?>
+            <div>
+                    <a href="../assets/php/logout.php" class="btn btn-danger">Cerrar sesión</a>
+            </div>
             </div>
         </div>
     </main>

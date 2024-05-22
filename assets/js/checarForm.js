@@ -6,7 +6,7 @@ var emailElement = document.getElementById('email');
 var boletaElement = document.getElementById('boleta');
 var telefonoElement = document.getElementById('telefono');
 var passwordElement = document.getElementById('password');
-var submitButton = document.querySelector('input[type="submit"]');
+var submitButton = document.getElementById('registrarse');
 
 //divs de error
 const nInvalidElement = document.querySelector('.n-invalid');
