@@ -4,6 +4,10 @@ searchInput.addEventListener('input', function(event) {
     let searchData = event.target.value; // Get the value from the input
     search(searchData);
   });
+
+  window.addEventListener('load', function() {
+    search('');
+  });
   
   function search(data) {
     $.ajax({

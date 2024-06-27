@@ -11,9 +11,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         success: function(response) {
             if (response.success) {
                 swal({
-                    title: 'Bienvenido!',
-                    text: response.message,
-                    icon: 'success'
+                    title: '¡Bienvenido!',
+                    icon: 'success',
+                    button: {
+                        className: 'bs'
+                      }
                 }).then(function() {
                     window.location.href = 'gen_pdf.html';
                 });

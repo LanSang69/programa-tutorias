@@ -10,7 +10,15 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         dataType: 'json',
         success: function(response) {
             if (response.success) {
-                window.location.href = 'adminPage.php';
+                swal({
+                    title: '¡Bienvenido!',
+                    icon: 'success',
+                    button: {
+                        className: 'bs'
+                      }
+                }).then(function() {
+                    window.location.href = '../assets/php/CRUD/index.php';
+                });
             } else {
                 swal('Error!', response.message, 'error');
             }

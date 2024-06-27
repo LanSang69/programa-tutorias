@@ -22,6 +22,20 @@ main{
     margin: auto;
 }
 
+.bs {
+    color: var(--color-1);
+    background-color: var(--color-5);
+    margin: 10px;
+    border: 0;
+}
+
+.bc {
+    color: var(--color-5);
+    background-color: var(--color-1);
+    margin: 10px;
+    border: 0;
+}
+
 .contenedor__todo{
     width: 100%;
     max-width: 850px;

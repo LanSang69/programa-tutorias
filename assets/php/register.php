@@ -22,7 +22,7 @@ $response = array();
 
 if ($db->makeQuery($sql)) {
     $response['success'] = true;
-    $response['message'] = "Boleta: $boleta\nNombre: $name\nApellido Paterno: $lastName\nApellido Materno: $secondLastName\nTelefono: $telefono\nSemestre: $semestre\nCarrera: $carrera\nPreferencia: $sexo\nEmail: $email";
+    $response['message'] = "\nBoleta: $boleta\nNombre: $name\nApellido Paterno: $lastName\nApellido Materno: $secondLastName\nTelefono: $telefono\nSemestre: $semestre\nCarrera: $carrera\nPreferencia: $sexo\nEmail: $email";
 } else {
     $response['success'] = false;
     
