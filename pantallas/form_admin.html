@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/slider.css">
     <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/login_alumno.css">
     <link rel="stylesheet" href="../assets/css/admin.css">
-</head>
 
 <body>
     <header>
@@ -48,36 +48,37 @@
                                 <a class="nav-link" href="form_admin.html"><b>Admin</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Generar pdf</b></a>
+                                <a class="nav-link" href="login_alumno.html"><b>Generar pdf</b></a>
                             </li>
                         </ul>
                     </div>
                 </div>
     </nav>
-    <main>
-        <div class="wrapper">
-            <form id="loginForm">
-                <h2 class="d-flex align-items-center justify-content-center">INICIO DE SESIÓN ADMIN</h2>
-                <div class="input-box">
-                    <label for="email">Correo:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" name="email"
-                        required>
-                </div>
-                <div class="input-box">
-                    <label for="pwd">Contraseña:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pwd"
-                        required>
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" name="remember"> Recordarme </label>
-                </div>
-                <button type="submit" class="btn"> Entrar </button>
-            </form>
-        </div>
-    </main>
+    <main class="d-flex justify-content-center align-items-center h-100">
+        <div class="caja__trasera"></div>
+            <div class="wrapper">
+                <form id="loginForm">
+                    <h2 class="d-flex align-items-center justify-content-center">INICIO DE SESIÓN ADMIN</h2>
+                    <div class="input-box">
+                        <label for="email">Correo:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" name="email"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <label for="pwd">Contraseña:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pwd"
+                            required>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Recordarme </label>
+                    </div>
+                    <button type="submit" class="btn"> Entrar </button>
+                </form>
+            </div>
+</main>
 
-    <script src="../assets/js/admin.js"></script>
-    <script src="../assets/js/requests/login.js"></script>
+<script src="../assets/js/admin.js"></script>
+<script src="../assets/js/requests/login.js"></script>
 </body>
 
 </html>

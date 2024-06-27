@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../assets/css/slider.css">
     <link rel="stylesheet" href="../assets/css/content.css">
     <link rel="stylesheet" href="../assets/css/registro.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                                 <a class="nav-link" href="form_admin.html"><b>Admin</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Generar pdf</b></a>
+                                <a class="nav-link" href="login_alumno.html"><b>Generar pdf</b></a>
                             </li>
                         </ul>
                     </div>
@@ -79,39 +80,47 @@
                             <!--Formulario de Cuenta-->
                             <form action="" id="register-form" autocomplete="off">
                                 <div class="formulario__Cuenta">
-                                    <h2>Datos Personales y Académicos</h2>
-                                    <input type="text" id="boleta" name="boleta" placeholder="No. Boleta"
-                                        maxlength="10">
+                                    <h2>DATOS PERSONALES Y ACADÉMICOS</h2>
+                                    <div class="input-box">
+                                        <input type="text" class="form-control" id="boleta" name="boleta" placeholder="No. Boleta"
+                                            maxlength="10">
+                                    </div>
                                     <div class="boleta-invalid hide">
                                         <p>La boleta es inválida</p>
                                     </div>
-
-                                    <input type="text" id="name" name="name" placeholder="Nombre">
+                                    <div class="input-box">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                                    </div>
                                     <div class="n-invalid hide">
                                         El nombre es invalido
                                     </div>
-
-                                    <input type="text" id="lastName" name="lastName" placeholder="Primer Apellido">
+                                    <div class="input-box">
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Primer Apellido">
+                                    </div>
                                     <div class="ln-invalid hide">
                                         <p>El apellido es invalido</p>
                                     </div>
 
-                                    <input type="text" id="sLastName" name="secondLastName"
+                                    <div class="input-box">
+                                    <input type="text" class="form-control" id="sLastName" name="secondLastName"
                                         placeholder="Segundo Apellido">
+                                    </div>
                                     <div class="sln-invalid hide">
                                         <p>El segundo apellido es invalido</p>
                                     </div>
 
-                                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono"
+                                    <div class="input-box">
+                                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono"
                                         maxlength="10">
+                                    </div>
                                     <div class="tel-invalid hide">
                                         <p>El teléfono es invalido</p>
                                     </div>
 
                                     <div class="container mt-3">
-                                        <div class="form-group d-flex align-items-center mb-3">
+                                        <div class="form-group d-flex align-items-center mb-3 input-box">
                                             <p class="mr-3 mb-0">Semestre:</p>
-                                            <select class="form-control" name="semestre">
+                                            <select class="form-select" name="semestre">
                                                 <option value="1">Primero</option>
                                                 <option value="2">Segundo</option>
                                                 <option value="3">Tercero</option>
@@ -125,17 +134,28 @@
                                             </select>
                                         </div>
 
-                                        <div class="form-group d-flex align-items-center mb-3">
+                                        <div class="form-group d-flex align-items-center mb-3 input-box">
                                             <p class="mr-3 mb-0">Carrera:</p>
-                                            <select class="form-control" name="carrera">
-                                                <option value="SC">Ing. Sistemas Computacionales</option>
-                                                <option value="IT">Ing. Inteligencia Artificial</option>
-                                                <option value="CD">Lic. Ciencia de Datos</option>
+                                            <select class="form-select" name="carrera">
+                                                <option value="ISC">Ing. Sistemas Computacionales</option>
+                                                <option value="IA">Ing. Inteligencia Artificial</option>
+                                                <option value="LCD">Lic. Ciencia de Datos</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group d-flex align-items-center mb-3 input-box">
+                                            <p class="mr-3 mb-0">Tipo tutoria:</p>
+                                            <select class="form-select" name="tutoria">
+                                                <option value="individual">Tutoría individual</option>
+                                                <option value="grupal">Tutoría Grupal</option>
+                                                <option value="recuperacion">Tutoría de Recuperación</option>
+                                                <option value="regularizacion">Tutoría de Regularización</option>
+                                                <option value="de pares">Tutoría entre pares</option>
                                             </select>
                                         </div>
                                     </div>
 
-                                    <div class="form-check mb-3">
+                                    <div class="form-check mb-3 form-control">
                                         <p>¿Prefieres que tu tutor sea hombre o mujer?</p>
                                         <input type="radio" name="sexo" value="hombre"> Hombre
                                         <input type="radio" name="sexo" value="mujer"> Mujer
@@ -144,18 +164,21 @@
                                 </div>
 
 
-
                                 <!--Formulario de Datos Personales y Academicos-->
                                 <div action="" class="formulario__Datos">
-                                    <h2>Cuenta</h2>
-                                    <input type="text" id="email" name="email" placeholder="Correo Institucional">
+                                    <h2>CUENTA</h2>
+                                    <div class="input-box">
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Correo Institucional">
+                                    </div>
                                     <div class="email-invalid hide">
                                         <p>El email es invalido</p>
                                     </div>
 
-                                    <input type="password" id="password" name="password" placeholder="Contraseña">
+                                    <div class="input-box">
+                                        <input type="password"  class="form-control" id="password" name="password" placeholder="Contraseña">
+                                    </div>
                                     <div class="password-invalid hide">
-                                        <p>La contraseña es invalida</p>
+                                        <p>La contraseña debe contener mínimo de 8 caracteres, 1 letra 1 número y 1 carácter especial (. , @ # $ % & * _ \ - + = !)</p>
                                     </div>
 
                                     <button type="submit" id="registrarse">Regístrarse</button>
@@ -172,6 +195,7 @@
     <script src="../assets/js/validacion.js"></script>
     <script src="../assets/js/checarForm.js"></script>
     <script src="../assets/js/requests/register.js"></script>
+    <script src="../assets/js/admin.js"></script>
 </body>
 
 </html>

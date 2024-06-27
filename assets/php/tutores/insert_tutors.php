@@ -2,17 +2,7 @@
 session_start();
 include 'conection.php';
 
-$boleta = $_POST['boleta'];
-$name = $_POST['name'];
-$lastName = $_POST['lastName'];
-$secondLastName = $_POST['secondLastName'];
-$telefono = $_POST['telefono'];
-$semestre = $_POST['semestre'];
-$carrera = $_POST['carrera'];
-$tutoria = $_POST['tutoria'];
-$sexo = $_POST['sexo'];
-$email = $_POST['email'];
-$password = $_POST['password'];
+$tutor = $_POST['tutor'];
 
 $db = new Database('localhost', 'root', '', 'Tutorias');
 

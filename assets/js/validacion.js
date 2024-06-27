@@ -1,4 +1,5 @@
-let regexCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+let regexCorreo = /^[a-zA-Z0-9._%+-]+@alumno\.ipn\.mx$/;
+let regexAdmin = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 let regexNumero = /\d{10}/;
 let regexNombres = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+(\s[a-zA-ZáéíóúÁÉÍÓÚñÑ]+)*$/;
 let regexBoleta = /^20\d{8}/;
@@ -18,4 +19,7 @@ function validarContra(contra){
 }
 function validarTelefono(telefono) {
     return regexNumero.test(telefono);
+}
+function validarAdmin(correo) {
+    return regexAdmin.test(correo);
 }

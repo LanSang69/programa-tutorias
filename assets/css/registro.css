@@ -36,7 +36,6 @@ main{
     justify-content: center;
     backdrop-filter: blur(10px);
     background-color: var(--color-5);
-
 }
 
 .caja__trasera div{

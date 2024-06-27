@@ -1,0 +1,13 @@
+:root {
+    --color-1: #d1dbe4; /* Light Blue Grey */
+    --color-2: #a3b7ca; /* Silver Lake Blue */
+    --color-3: #7593af; /* Dark Sky Blue */
+    --color-4: #476f95; /* Steel Blue */
+    --color-5: #194a7a; /* Dark Cerulean */
+    --bondi-blue: #1E91B3ff;
+    --nav-font: "Courier Prime", monospace;
+  }
+
+  h1{
+    color:var(--color-5)
+  }
