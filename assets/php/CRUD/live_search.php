@@ -44,7 +44,7 @@ if(isset($_POST['input'])) {
                         <td> <?php echo htmlspecialchars($row['email']); ?> </td>
                         <td>
                             <a href="modificar.php?boleta=<?= htmlspecialchars($row['numero_boleta']) ?>" class="btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a onclick="return eliminar()" href="index.php?boleta=<?= htmlspecialchars($row['numero_boleta']) ?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+                            <a onclick="return eliminar()" href="index.php?boleta=<?=$row['numero_boleta']?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash-can"></i></a>
                         </td>
                     </tr>
                 <?php } ?>
